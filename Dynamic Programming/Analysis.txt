@@ -1,0 +1,12 @@
+Dice Combinations:
+Counting Problem
+
+
+Minimizing Coins:
+Counting Problem
+Notably, there is a certain problem with using INT_MAX as the identity for the min law of composition:
+    min: (Z mod (2^32)Z))^2 -> Z mod (2^31-1)Z) 
+    min: (a, INT_MAX)|-> a
+
+In that if you ever want to use INT_MAX + some constant, then it rolls over to the 
+negative integers and then the min values become some negative shit. 
